@@ -1,11 +1,16 @@
-/* Button */
+/* Buttons */
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding: 0 32px;
   border-radius: var(--radius-sm);
-  font-size: var(--fs-xs);
-  font-weight: 500;
-  transition: opacity 0.2s;
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -19,29 +24,25 @@
 
 .btn--secondary {
   background-color: var(--color-secondary);
-  color: var(--color-heading);
+  color: var(--color-text-dark);
 }
 
-/* Section title */
-.section-title {
-  font-size: var(--fs-xl);
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-/* ไฮไลต์สีส้มอ่อนครึ่งล่างของคำ เช่น "Featured", "place", "Pricing" */
-.text-highlight {
-  background: linear-gradient(
-    to top,
-    var(--color-primary-light) 60%,
-    transparent 60%
-  );
-  padding: 0 4px;
-}
-
-/* Card */
+/* Cards */
 .card {
   background-color: var(--color-white);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
+}
+
+/* Section Title Pattern */
+.section-badge {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgba(255, 115, 66, 0.1);
+  border: 0.5px solid var(--color-primary);
+  border-radius: 4px;
+  font-family: var(--font-family-display);
+  font-weight: 900;
+  font-size: 48px;
+  color: var(--color-heading);
 }

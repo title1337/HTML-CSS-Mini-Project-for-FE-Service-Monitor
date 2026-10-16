@@ -1,0 +1,48 @@
+.cta-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  background-color: var(--color-white);
+}
+
+.cta-box {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background: #669ff6;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.cta-box h2 {
+  font-family: var(--font-family-display);
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 24px;
+  color: var(--color-white);
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  max-width: 574px;
+  margin: 0 auto;
+  background: var(--color-white);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.cta-form input {
+  flex: 1;
+  padding: 0 20px;
+  border: none;
+  font-family: var(--font-family-sans);
+  font-size: 16px;
+  color: var(--color-text);
+  outline: none;
+}
