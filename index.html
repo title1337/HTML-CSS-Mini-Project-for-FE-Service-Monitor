@@ -21,10 +21,9 @@
     <link rel="stylesheet" href="css/header.css" />
 
     <!-- Sections -->
-    <link rel="stylesheet" href="css/sections/header.css" />
-    <link rel="stylesheet" href="css/sections/hero.css" />
+    <link rel="stylesheet" href="css/hero.css" />
 
-    <script src="js/main.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -62,7 +61,125 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="hero__inner container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Best Platform<br />
+              for Monitor<br />
+              Work Flow
+            </h1>
+
+            <div class="hero__action">
+              <a href="#" class="btn btn--primary">Get 15 Day Trial</a>
+            </div>
+
+            <div class="hero__partners">
+              <img src="images/hero/brand-04.png" alt="Brand 04" />
+              <img src="images/hero/brand-01.png" alt="Brand 01" />
+              <img src="images/hero/brand-06.png" alt="Brand 06" />
+              <img src="images/hero/brand-05.png" alt="Brand 05" />
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="dashboard">
+              <div class="dashboard__header">
+                <div>
+                  <strong>Post Overview</strong>
+                </div>
+                <span class="dashboard__period">This week <span>⌄</span></span>
+              </div>
+
+              <div class="dashboard__metrics">
+                <div class="dashboard__metric">
+                  <span class="dashboard__metric-icon dashboard__metric-icon--yellow"></span>
+                  <span class="dashboard__metric-lines"><i></i><i></i></span>
+                </div>
+                <div class="dashboard__metric">
+                  <span class="dashboard__metric-icon dashboard__metric-icon--yellow"></span>
+                  <span class="dashboard__metric-lines"><i></i><i></i></span>
+                </div>
+                <div class="dashboard__metric">
+                  <span class="dashboard__metric-icon dashboard__metric-icon--blue"></span>
+                  <span class="dashboard__metric-lines"><i></i><i></i></span>
+                </div>
+                <div class="dashboard__metric dashboard__metric--empty"></div>
+              </div>
+
+              <div class="dashboard__main-chart">
+                <div class="dashboard__chart-heading">
+                  <div><i></i><i></i></div>
+                </div>
+                <div class="dashboard__bars" role="presentation">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="dashboard__chart-values">
+                  <span>25,3K</span><i></i><span>+120</span><i></i>
+                </div>
+              </div>
+
+              <div class="dashboard__donut-card">
+                <i></i><i></i>
+                <span class="dashboard__donut"></span>
+              </div>
+
+              <div class="dashboard__bottom">
+                <div class="dashboard__activity">
+                  <i></i><i></i>
+                  <svg viewBox="0 0 420 100" role="presentation">
+                    <path
+                      d="M4 92 44 42 94 20 140 7 178 25 230 40 275 29 306 20 335 58 355 58 370 47 392 64 416 42"
+                    />
+                    <g>
+                      <circle cx="44" cy="42" r="6" />
+                      <circle cx="140" cy="7" r="6" />
+                      <circle cx="230" cy="40" r="6" />
+                      <circle cx="306" cy="20" r="6" />
+                      <circle cx="335" cy="58" r="6" />
+                      <circle cx="355" cy="58" r="6" />
+                      <circle cx="392" cy="64" r="6" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="dashboard__sources">
+                  <span><i></i><b></b><small></small></span>
+                  <span><i></i><b></b><small></small></span>
+                </div>
+                <div class="dashboard__line-chart">
+                  <i></i><i></i>
+                  <svg viewBox="0 0 180 80" role="presentation">
+                    <path d="M3 61 24 50 43 60 65 45 84 40 104 48 124 57 142 35 157 31 177 8" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard__post card">
+              <strong>Post Type</strong>
+              <span class="dashboard__post-ring">
+                <i>
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M12 3 7 8h3v6h4V8h3l-5-5ZM5 14v5h14v-5h-3v2H8v-2H5Z" />
+                  </svg>
+                </i>
+              </span>
+              <small><i></i> Images <i></i> Videos</small>
+            </div>
+            <div class="dashboard__likes card">
+              <span>
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M9 10 12 4c.6-1.2 2.5-.8 2.5.6V9H19a2 2 0 0 1 1.9 2.6l-2 7A2 2 0 0 1 17 20h-8V10Zm-5 0h3v10H4z" />
+                </svg>
+              </span>
+              <strong>398K<small>Total Likes</small></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
   </body>
