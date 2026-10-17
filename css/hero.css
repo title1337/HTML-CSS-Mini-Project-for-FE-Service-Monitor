@@ -5,7 +5,7 @@
   min-height: 960px;
   margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(180deg, #ffede7 0%, #fff 100%);
+  background: linear-gradient(180deg, #fff1ed 0%, #fff 100%);
 }
 
 .hero__inner {
@@ -91,7 +91,7 @@
   right: 0;
   left: 0;
   height: 100px;
-  background: #f5f9ff;
+  background: #f4f8ff;
   content: "";
 }
 
@@ -398,7 +398,6 @@
   border-right-color: #ff7342;
   border-bottom-color: #ff7342;
   border-radius: 50%;
-  transform: rotate(-35deg);
 }
 
 .dashboard__post-ring i {
@@ -473,7 +472,7 @@
   padding: 0;
   overflow: visible;
   border-radius: 14px;
-  background: #f5f9ff;
+  background: #f4f8ff;
   box-shadow: none;
 }
 
@@ -660,6 +659,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 11px;
+  font-family: "Times New Roman", serif;
   color: #183b56;
   font-size: 20px;
   font-weight: 700;
@@ -843,6 +843,7 @@
 .dashboard__post {
   top: 0;
   left: 0;
+  z-index: 2;
   width: 196.34px;
   height: 248.11px;
   padding: 26px 12px 18px;
@@ -851,6 +852,7 @@
 
 .dashboard__post > strong {
   color: #183b56;
+  font-family: "Times New Roman", serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -859,10 +861,10 @@
   width: 102.64px;
   height: 102.64px;
   margin: 22px 0 20px;
-  border-width: 8px;
-  border-bottom-color: #ff7342;
-  border-right-color: #ff7342;
-  transform: rotate(-28deg);
+  border: 8px solid transparent;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    conic-gradient(from 0deg, #ff7342 0deg 180deg, #ffd167 180deg 360deg) border-box;
 }
 
 .dashboard__post-ring i {
@@ -882,6 +884,7 @@
 
 .dashboard__post small {
   color: #5a7184;
+  font-family: "Times New Roman", serif;
   font-size: 12px;
 }
 
@@ -898,6 +901,7 @@
 .dashboard__likes {
   top: 129.4px;
   right: 0;
+  z-index: 2;
   width: 205.36px;
   height: 98.57px;
   padding: 17px 24px;
@@ -921,11 +925,13 @@
 
 .dashboard__likes strong {
   color: #183b56;
+  font-family: "Times New Roman", serif;
   font-size: 17px;
 }
 
 .dashboard__likes small {
   color: #5a7184;
+  font-family: "Times New Roman", serif;
   font-size: 13px;
 }
 
@@ -943,8 +949,6 @@
   .hero__visual {
     top: 160px;
     right: 2%;
-    transform: scale(0.72);
-    transform-origin: top right;
   }
 
   .hero__partners {
@@ -972,6 +976,7 @@
     top: 200px;
     right: -10%;
     transform: scale(0.62);
+    transform-origin: top right;
   }
 
   .hero__partners {
