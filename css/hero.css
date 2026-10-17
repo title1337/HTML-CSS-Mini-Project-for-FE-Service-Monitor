@@ -899,7 +899,7 @@
 }
 
 .dashboard__likes {
-  top: 129.4px;
+  top: 117px;
   right: 0;
   z-index: 2;
   width: 205.36px;
@@ -1038,5 +1038,17 @@
     left: 10px;
     transform: scale(0.37455);
     transform-origin: top left;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__visual {
+    transform: scale(0.35);
+  }
+}
+
+@media (max-width: 340px) {
+  .hero__visual {
+    transform: scale(0.3);
   }
 }

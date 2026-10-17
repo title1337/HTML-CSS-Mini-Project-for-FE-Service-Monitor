@@ -1,0 +1,433 @@
+.integrate-pricing {
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0;
+  background: #f9f9f9;
+}
+
+.integrate-pricing__accent {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.integrate-pricing__accent--left {
+  inset: 0;
+}
+
+.integrate-pricing__accent-shape {
+  position: absolute;
+  transform: rotate(-150deg);
+  transform-origin: center;
+}
+
+.integrate-pricing__accent-shape--cyan {
+  z-index: 2;
+  top: 270.8px;
+  left: 106.63px;
+  display: block;
+  width: 76px;
+  height: 95px;
+  transform: none;
+}
+
+.integrate-pricing__accent--right {
+  top: 877px;
+  right: max(32px, calc((100% - 1620px) / 2));
+  width: 109px;
+  aspect-ratio: 1;
+  border-radius: 30px;
+  background: #6a99ff;
+  transform: rotate(-30deg);
+}
+
+.integration,
+.pricing {
+  position: relative;
+  z-index: 1;
+}
+
+.integration__inner.container,
+.pricing__inner.container {
+  max-width: 1460px;
+}
+
+.integration__title,
+.pricing__title {
+  margin: 0 auto;
+  color: #3b3b3b;
+  font-family: var(--font-family-display);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.21;
+  text-align: center;
+}
+
+.integration__title {
+  max-width: 370px;
+  letter-spacing: -0.05em;
+}
+
+.integration__title span,
+.pricing__title span {
+  padding: 0 4px;
+  border: 0.5px solid #ff7342;
+  background: rgba(255, 115, 66, 0.2);
+  white-space: nowrap;
+}
+
+.integration__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px 10px;
+  margin-top: 70px;
+}
+
+.integration__logo {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 5px 30px 56.1276px rgba(55, 55, 55, 0.1098);
+  color: #979797;
+  font-family: Arial, sans-serif;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.integration__logo > * {
+  opacity: 0.5;
+}
+
+.integration__logo--featured {
+  background: #ff7342;
+  box-shadow: 0 18px 32px rgba(255, 115, 66, 0.14);
+  color: #fff;
+}
+
+.integration__logo--featured > * {
+  opacity: 1;
+}
+
+.integration__logo--netflix {
+  font-family: Impact, "Arial Narrow", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+.integration__logo--fitbit {
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.integration__logo--airbnb {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.integration__mark {
+  width: 30px;
+  height: 32px;
+  flex: 0 0 auto;
+  fill: currentColor;
+  line-height: 1;
+}
+
+.integration__logo--slack .integration__mark {
+  width: 30px;
+  height: 40px;
+}
+
+.integration__logo--airbnb .integration__mark {
+  width: 25px;
+  height: 34px;
+}
+
+.pricing {
+  margin-top: 180px;
+}
+
+.pricing__title {
+  min-height: 58px;
+}
+
+.pricing__billing {
+  display: flex;
+  width: 287px;
+  min-height: 41px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto 80px;
+  color: #5a7184;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.pricing__billing-label--active {
+  color: #333;
+  font-weight: 500;
+}
+
+.pricing__billing-switch {
+  display: flex;
+  width: 90px;
+  height: 41px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 6px;
+  border-radius: 24px;
+  background: #ff7342;
+}
+
+.pricing__billing-switch i {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.pricing__plans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.pricing__plan {
+  display: flex;
+  min-width: 0;
+  min-height: 536px;
+  flex-direction: column;
+  padding: 49px 50px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+.pricing__plan--premium {
+  background: #fff;
+  box-shadow: 0 54px 50px rgba(67, 67, 68, 0.07);
+}
+
+.pricing__plan h3 {
+  color: #3b3b3b;
+  font-family: var(--font-family-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.pricing__price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 10px;
+  color: #5a7184;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.pricing__price strong {
+  color: #3b3b3b;
+  font-family: var(--font-family-display);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.pricing__features {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 10px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #f5f6fa;
+  list-style: none;
+}
+
+.pricing__features li {
+  position: relative;
+  min-height: 35px;
+  padding-left: 42px;
+  color: #5a7184;
+  font-size: 16px;
+  line-height: 32px;
+  white-space: nowrap;
+}
+
+.pricing__features li::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 115, 66, 0.1);
+  content: "";
+}
+
+.pricing__features li::after {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  width: 12px;
+  height: 7px;
+  border-bottom: 2px solid #ff7342;
+  border-left: 2px solid #ff7342;
+  content: "";
+  transform: rotate(-45deg);
+}
+
+.pricing__button {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: 4px;
+  background: #ffd167;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: filter 0.2s ease;
+}
+
+.pricing__plan--premium .pricing__button {
+  background: #ff7342;
+}
+
+.pricing__button:hover {
+  filter: brightness(0.96);
+}
+
+@media (max-width: 1200px) {
+  .integrate-pricing {
+    padding: 120px 0;
+  }
+
+  .integration__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pricing {
+    margin-top: 140px;
+  }
+
+  .pricing__plans {
+    gap: 16px;
+  }
+
+  .pricing__plan {
+    min-height: 500px;
+    padding: 36px 24px;
+  }
+
+  .pricing__features li {
+    padding-left: 36px;
+    font-size: 14px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 760px) {
+  .integrate-pricing {
+    padding: 88px 0;
+  }
+
+  .integrate-pricing__accent--left {
+    inset: 0;
+    transform: none;
+  }
+
+  .integrate-pricing__accent-shape--cyan {
+    top: 80px;
+    left: 8px;
+    transform: scale(0.35);
+    transform-origin: top left;
+  }
+
+  .integrate-pricing__accent--right {
+    top: 1560px;
+    right: 42px;
+    width: 32px;
+    border-radius: 50%;
+  }
+
+  .integration__title,
+  .pricing__title {
+    font-size: clamp(32px, 8vw, 42px);
+  }
+
+  .integration__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 44px;
+  }
+
+  .integration__logo {
+    min-height: 120px;
+    gap: 8px;
+    border-radius: 20px;
+    font-size: 24px;
+  }
+
+  .integration__logo--netflix {
+    font-size: 22px;
+  }
+
+  .integration__mark {
+    width: 26px;
+    height: 30px;
+  }
+
+  .integration__logo--slack .integration__mark {
+    width: 26px;
+    height: 36px;
+  }
+
+  .integration__logo--airbnb .integration__mark {
+    width: 22px;
+    height: 30px;
+  }
+
+  .pricing {
+    margin-top: 100px;
+  }
+
+  .pricing__billing {
+    margin: 30px auto 48px;
+  }
+
+  .pricing__plans {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .pricing__plan,
+  .pricing__plan--premium {
+    min-height: 490px;
+    padding: 36px 30px;
+    background: #fff;
+    box-shadow: 0 24px 40px rgba(67, 67, 68, 0.07);
+  }
+
+  .pricing__features li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .integration__grid {
+    gap: 10px;
+  }
+
+  .pricing__billing {
+    width: min(287px, 100%);
+    font-size: 16px;
+  }
+}
