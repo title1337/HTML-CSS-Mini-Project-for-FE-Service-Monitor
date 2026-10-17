@@ -131,3 +131,32 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 760px) {
+  .header {
+    padding: 28px 0;
+  }
+
+  .header__logo img {
+    width: 110px;
+  }
+
+  .header__toggle {
+    display: grid;
+    grid-template-columns: repeat(2, 10px);
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .header__toggle span,
+  .header__toggle::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: var(--color-heading);
+  }
+
+  .header__toggle::after {
+    content: "";
+  }
+}
