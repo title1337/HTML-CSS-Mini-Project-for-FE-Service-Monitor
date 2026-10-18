@@ -167,77 +167,95 @@
 
 @media (max-width: 760px) {
   .testimonial {
-    min-height: 0;
-    padding: 72px 0 80px;
+    min-height: 1154px;
+    padding: 0;
   }
 
   .testimonial__inner {
-    display: flex;
-    width: min(100% - 40px, 520px);
-    min-height: 0;
-    flex-direction: column;
-    gap: 48px;
+    width: 100%;
+    min-height: 1154px;
   }
 
   .testimonial__content {
-    position: static;
-    width: 100%;
+    top: 566px;
+    left: 24px;
+    width: calc(100% - 48px);
   }
 
   .testimonial__quote p {
-    font-size: clamp(21px, 5.5vw, 27px);
-    line-height: 1.65;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .testimonial__quote cite {
-    margin-top: 16px;
-    font-size: 14px;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .testimonial__controls {
-    gap: 20px;
+    gap: 30px;
     margin-top: 28px;
   }
 
   .testimonial__visual {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: min(100%, 390px);
-    height: auto;
-    aspect-ratio: 1;
-    margin: 0 auto;
+    top: 80px;
+    left: 10px;
+    width: 388.1px;
+    height: 456.55px;
     transform: none;
   }
 
   .testimonial__ring {
-    width: 92%;
-    height: auto;
-    aspect-ratio: 1;
+    width: 342.98px;
+    height: 342.98px;
+    border-color: rgba(55, 224, 245, 0.3);
+    border-width: 1.09325px;
   }
 
   .testimonial__ring--first {
-    top: 0;
+    top: 88.18px;
     left: 0;
   }
 
   .testimonial__ring--second {
-    top: 4%;
-    left: 12%;
+    top: 101.13px;
+    left: 45.13px;
   }
 
   .testimonial__circle {
-    top: 12%;
-    left: 4%;
-    width: 88%;
-    height: auto;
-    aspect-ratio: 1;
+    top: 117.91px;
+    left: 12.51px;
+    width: 326.2px;
+    height: 326.2px;
   }
 
   .testimonial__quote-mark {
-    top: 87%;
-    left: 22%;
-    width: 13%;
-    height: auto;
+    top: 396px;
+    left: 85px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial__controls {
+    position: absolute;
+    top: 387px;
+    left: 0;
+    gap: 30px;
+    margin: 0;
+  }
+
+  .testimonial__arrow--previous {
+    width: 56px;
+    height: 56px;
+  }
+
+  .testimonial__arrow--next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial__arrow--next path {
+    stroke: #183b56;
   }
 }
